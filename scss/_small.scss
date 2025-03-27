@@ -1,0 +1,133 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+}
+
+.quoteAndPassGroup {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    max-height: 100vh; 
+    flex-direction: column;
+    .quoteGroup {
+        text-align: center;
+        width: 70%;
+        .quote {
+            font-family: "Babylonica";
+            font-size: 7rem;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            word-spacing: 1rem;
+            .blankWord {
+                    color: white;
+                    border-bottom: 3px solid black;
+                    font-size: 1rem;
+                }
+        }
+        .quoteAuthor {
+            font-size: 2rem;
+            margin-bottom: 7rem;
+            margin-top: 0;
+        }
+    }
+    .passwordGroup {
+        .form {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 1rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            input {
+                height: 2.5rem;
+                margin-bottom: 1rem;
+                width: 300px;
+            }
+            button {
+                height: 2.5rem;
+            }
+        }
+    }
+}
+
+#headerWrapper {
+    background-color: #abd;
+    color: $secondaryColor;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem $gutter;
+    gap: 8px;
+    h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+        color: black;
+    }
+}
+
+#navWrapper {
+    background-color: aliceblue;
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            flex: 1;
+        }
+    }
+    li.active {
+        background-color: #e8e8e8;
+    }
+    a {
+        display: block;
+        padding: .75rem;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}
+
+// begin the footer
+
+#footerWrapper {
+    background-color: $primaryColor;
+}
+
+footer {
+    padding: .5rem $gutter;
+    p {
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+        color: white;
+    }
+}
+
