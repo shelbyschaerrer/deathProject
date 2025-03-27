@@ -377,6 +377,25 @@ body {
   height: 2.5rem;
 }
 
+.heroIntro {
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* or 'fixed' if you want it to stay in place as you scroll */
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.heroIntro h1 {
+  font-size: 8rem;
+  text-align: center;
+  margin: 0;
+}
+
 #headerWrapper {
   background-color: #abd;
   color: gray;
@@ -396,20 +415,29 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: aliceblue;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0; /* Ensures it stays at the very top */
+  left: 0; /* Aligns it to the left of the screen */
+  width: 100%; /* Makes the navbar span the full width of the screen */
+  z-index: 1000;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  padding-top: 2rem;
   display: flex;
 }
 nav ul li {
   flex: 1;
+  background-color: rgb(146, 146, 146);
+  margin: 0 1rem 0 1rem;
+  border-radius: 25px;
+  border: 1px solid black;
 }
 nav li.active {
-  background-color: #e8e8e8;
+  background-color: #ffffff;
 }
 nav a {
   display: block;
@@ -420,6 +448,51 @@ nav a {
 }
 nav a:hover {
   color: teal;
+}
+
+.bodyText_optionOne {
+  color: black;
+  font-size: 1rem;
+  margin-top: 100vh;
+}
+.bodyText_optionOne .sectionTitle h1 {
+  padding-top: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.bodyText_optionOne .imageTextImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bodyText_optionOne .imageTextImage span {
+  padding-top: 25%;
+  padding-bottom: 25%;
+  height: 100%;
+  background-color: gray;
+  width: 500px;
+  text-align: center;
+}
+.bodyText_optionOne .imageTextImage p {
+  width: 90%;
+  padding: 0 5rem 0 5rem;
+}
+
+.nextSection {
+  color: white;
+  background-color: #000;
+  text-align: center;
+  padding: 2rem 0 4rem 0;
+}
+.nextSection h1 {
+  font-family: "Babylonica";
+  font-size: 7rem;
+}
+.nextSection a {
+  border: 2px solid white;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 #footerWrapper {
