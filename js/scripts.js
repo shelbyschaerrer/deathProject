@@ -13,7 +13,7 @@ function checkPassword(event) {
 
     if (correctPasswords.includes(password)) {
         console.log("Password is correct. Redirecting...");  // Debugging: log if password is correct
-        window.location.href = "/intro.html";  // Redirect to another page (adjust path)
+        window.location.href = "../intro.html";  // Redirect to another page (adjust path)
     } else {
         console.log("Password is incorrect.");  // Debugging: log if password is incorrect
         alert("Incorrect password. Try again.");
