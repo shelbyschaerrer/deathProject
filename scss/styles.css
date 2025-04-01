@@ -421,40 +421,35 @@ header h1 {
   left: 0; /* Aligns it to the left of the screen */
   width: 100%; /* Makes the navbar span the full width of the screen */
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.454);
-  padding-bottom: 1rem;
-}
-#navWrapper:hover {
-  background-color: #000;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  padding-top: 1rem;
+  padding-top: 2rem;
   display: flex;
-  color: white;
 }
 nav ul li {
   flex: 1;
+  background-color: rgb(146, 146, 146);
   margin: 0 1rem 0 1rem;
-  color: white;
+  border-radius: 25px;
+  border: 1px solid black;
 }
 nav li.active {
-  border: 1px solid white;
-  color: white;
+  background-color: white;
 }
 nav a {
   display: block;
   padding: 0.75rem;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 nav a:hover {
-  color: rgb(207, 207, 207);
-  border: 1px solid rgb(207, 207, 207);
+  color: white;
+  background-color: #000;
 }
 
 .bodyText_optionOne {
