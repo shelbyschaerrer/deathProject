@@ -490,6 +490,7 @@ nav a:hover {
   background-color: #000;
   text-align: center;
   padding: 2rem 0 4rem 0;
+  margin-top: 20px;
 }
 .nextSection h1 {
   font-family: "Babylonica";
@@ -500,6 +501,31 @@ nav a:hover {
   padding: 1rem;
   color: white;
   text-decoration: none;
+}
+
+.finalQuote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.finalQuote .quote {
+  font-family: "babylonica";
+  font-size: 4rem;
+  width: 70%;
+  margin: 0;
+}
+.finalQuote .author {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+.finalQuote img {
+  width: 300px;
+  text-align: center;
+  margin: 0;
 }
 
 #footerWrapper {
