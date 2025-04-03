@@ -352,8 +352,10 @@ body {
 }
 .quoteAndPassGroup .quoteGroup .quote .blankWord {
   color: white;
-  border-bottom: 3px solid black;
-  font-size: 1rem;
+  transition: color 0.75s ease-in-out;
+}
+.quoteAndPassGroup .quoteGroup .quote .blankWord:hover {
+  color: rgb(210, 210, 210);
 }
 .quoteAndPassGroup .quoteGroup .quoteAuthor {
   font-size: 2rem;

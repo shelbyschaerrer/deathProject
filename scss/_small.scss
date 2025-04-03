@@ -37,8 +37,12 @@ body {
             word-spacing: 1rem;
             .blankWord {
                     color: white;
-                    border-bottom: 3px solid black;
-                    font-size: 1rem;
+                   // border-bottom: 3px solid black;
+                    transition: color 0.75s ease-in-out;
+                    //font-size: 1rem;
+                    &:hover {
+                        color: rgb(210, 210, 210);
+                    }
                 }
         }
         .quoteAuthor {
