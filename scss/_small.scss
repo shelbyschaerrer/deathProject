@@ -110,13 +110,14 @@ header {
 }
 
 #navWrapper {
-position: fixed; /* Fixes the navbar at the top */
-  top: 0;          /* Ensures it stays at the very top */
-  left: 0;         /* Aligns it to the left of the screen */
-  width: 100%;     /* Makes the navbar span the full width of the screen */
+position: fixed; 
+  top: 0;          
+  left: 0;        
+  width: 100%;     
   z-index: 1000;
   background: rgba(0, 0, 0, 0.454);
   padding-bottom: 1rem;
+  transition: background-color 0.75s ease-in-out; //this doesn't work
     &:hover {
         background-color: #000;
     }
