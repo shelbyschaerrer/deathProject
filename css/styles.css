@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -332,6 +333,14 @@ body {
   color: #000;
 }
 
+.cultureBody {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(50, 50, 50) 100%);
+  background-attachment: fixed; /* Optional: makes it stay in place */
+  background-repeat: no-repeat;
+  background-size: cover; /* 🧠 This is the key! */
+  color: white;
+}
+
 .quoteAndPassGroup {
   display: flex;
   justify-content: center;
@@ -461,7 +470,6 @@ nav a:hover {
 }
 
 .bodyText_optionOne {
-  color: black;
   font-size: 1rem;
   margin-top: 100vh;
 }

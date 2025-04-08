@@ -20,6 +20,19 @@ body {
     color: $fontColor;
 }
 
+.cultureBody {
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(50,50,50,1) 100%
+  );
+  background-attachment: fixed; /* Optional: makes it stay in place */
+  background-repeat: no-repeat;
+  background-size: cover; /* 🧠 This is the key! */
+  color: white;
+}
+
+
 .quoteAndPassGroup {
     display: flex;
     justify-content: center;  
@@ -156,7 +169,7 @@ nav {
 }
 
 .bodyText_optionOne {
-    color: black;
+    //color: black;
     font-size: 1rem;
     margin-top: 100vh; //makes it not be on top of the hero image
     .sectionTitle {
